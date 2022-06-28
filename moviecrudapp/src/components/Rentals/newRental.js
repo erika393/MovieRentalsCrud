@@ -17,6 +17,7 @@ export default function NewMovie() {
     const history = useHistory();
 
     const token = localStorage.getItem('token')
+    
     const authorization = {
         headers: {
             Authorization: `Bearer ${token}`

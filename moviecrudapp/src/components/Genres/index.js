@@ -39,23 +39,7 @@ export default function Genres() {
             setFilter(genres)
         }
     }
-
-    const returnFilterGenre = () => {
-        filter.map(genre => (
-            <tr key={genre.id}>
-                <td>{genre.name}</td>
-                <td>{(new Date(genre.creationDate)).toLocaleDateString()}</td>
-                <td><Switch checked={activeValue(genre.active)} disabled /></td>
-                <td>
-                    <Button type='button' onClick={() => editGenre(genre.id)}>
-                        <Edit size="30" />
-                    </Button>
-
-                </td>
-            </tr>
-        ))
-    }
-
+    
     //lidando com os efeitos colaterais do request e pegando os dados dos genres
     useEffect(() => {
         api.get('api/genres', authorization).then(
