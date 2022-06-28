@@ -42,7 +42,7 @@ export default function Register(){
 
             //ao se registrar eh redirecionado para a pagina de login
             alert(`User ${email} successfully registered!`)
-            history.push('/login')
+            history.push('/')
         }catch(error){
             alert('Register Failed! ' + error)
         }
