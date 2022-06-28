@@ -1,0 +1,36 @@
+.layout-container{
+    padding: 20px;
+}
+
+.links-div{
+    border-radius: 15px;
+}
+
+.logout{
+    text-align: end;
+    float: right;
+}
+
+.grid{
+    margin: auto;
+    margin-left: 200px;
+}
+
+.link{
+    text-align: left;
+    margin: 14px;
+    text-decoration: none;
+}
+
+.link:hover{
+    border-bottom: 2px solid teal;
+}
+
+.link-register{
+    text-align: end;
+}
+
+.title{
+    color: white;
+    text-align: left;
+}

@@ -1,0 +1,127 @@
+body {
+    background-color: #333;
+}
+
+.movie-container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 0 25px;
+    margin: 20px auto;
+}
+
+.movie-container header {
+    display: flex;
+    align-items: center;
+}
+
+.movie-container header span {
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.movie-container header span strong {
+    color: #333;
+}
+
+.movie-container header img {
+    height: 50px;
+}
+
+.movie-container header a {
+    width: 250px;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.movie-container header button {
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-left: 16px;
+    transition: border-color 0.5s;
+}
+
+.movie-container header button:hover {
+    border-color: #201465;
+}
+
+.movie-container h1 {
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+.movie-container ul {
+    display: grid;
+    padding: 0 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+    list-style: none;
+}
+
+.movie-container ul li {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.movie-container ul li button {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border: 0;
+    background-color: transparent;
+}
+
+.movie-container ul li button+button {
+    top: 50px;
+}
+
+.movie-container ul li button:hover {
+    opacity: 0.8;
+}
+
+.movie-container ul li strong {
+    display: block;
+    margin-bottom: 16px;
+    color: #41414d;
+}
+
+.movie-container ul li p+strong {
+    margin-top: 32px;
+}
+
+.movie-container ul li p {
+    color: #737380;
+    line-height: 21px;
+    font-size: 16px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.organize-buttons{
+    align-items: right;
+    text-align: right;
+}
+
+.organize-buttons button{
+    margin: 10px;
+}
