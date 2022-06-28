@@ -4,7 +4,7 @@ import { Button } from '@mui/material';
 import { Edit, Delete, Search } from '@mui/icons-material';
 import api from '../../services/api'
 import './style.css'
-import Layout from '../Layout'
+import Header from '../../components/Header'
 
 export default function Rentals() {
 
@@ -73,7 +73,7 @@ export default function Rentals() {
     return (
         <div className='rental-container'>
             <header>
-                <Layout />
+                <Header />
                 <Link className="button float-end m-4" to="rental/new/0">Create Rental</Link>
             </header>
             <div className='search-div'>

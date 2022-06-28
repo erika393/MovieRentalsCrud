@@ -24,7 +24,7 @@ export default function NewGenre(){
         }
     }
 
-    const redirectPage = (event) => {
+    const redirectPage = () => {
         history.push('/genres')
     }
 
@@ -78,6 +78,8 @@ export default function NewGenre(){
     const handleChange = () => {
         setActive(!active)
     }
+
+    
 
     return(
         <div className='new-genre-container'>

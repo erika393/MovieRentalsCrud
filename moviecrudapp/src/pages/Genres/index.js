@@ -4,7 +4,7 @@ import { Button, Switch } from '@mui/material';
 import { Edit, Search } from '@mui/icons-material';
 import api from '../../services/api'
 import './style.css'
-import Layout from '../Layout'
+import Header from '../../components/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -68,7 +68,7 @@ export default function Genres() {
     return (
         <div className='genre-container'>
             <header>
-                <Layout />
+                <Header />
                 <Link className="button m-4 float-end" to="genre/new/0">Create Genre</Link>
             </header>
             <div className='search-div'>

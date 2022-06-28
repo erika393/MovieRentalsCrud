@@ -1,11 +1,9 @@
 import React from 'react'
-import { styled } from '@mui/material/styles';
-import { Grid, Box, Paper } from '@mui/material'
-import { Link, useHistory, useParams } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import './style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function Layout() {
+export default function Header() {
 
     const email = localStorage.getItem('email')
     const token = localStorage.getItem('token')

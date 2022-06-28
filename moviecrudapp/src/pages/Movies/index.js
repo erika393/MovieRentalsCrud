@@ -4,7 +4,7 @@ import { Switch, Button } from '@mui/material';
 import { Edit, Delete, Search } from '@mui/icons-material';
 import api from '../../services/api'
 import './style.css'
-import Layout from '../Layout'
+import Header from '../../components/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Movies() {
@@ -81,7 +81,7 @@ export default function Movies() {
     return (
         <section className='layout-container'>
             <header>
-                <Layout />
+                <Header />
             </header>
             <div className='movie-container'>
                 <header>

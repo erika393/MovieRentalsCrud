@@ -16,7 +16,6 @@ export default function NewMovie() {
     const [creationDate, setCreationDate] = useState('')
     const [active, setActive] = useState(false)
     const [genreId, setGenreId] = useState('')
-    const [modal, setModal] = useState(false)
 
     const history = useHistory();
 
