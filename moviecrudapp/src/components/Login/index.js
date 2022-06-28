@@ -17,10 +17,6 @@ export default function Login(){
         history.push('/register')
     }
 
-    const redirectIndex = () => {
-        history.push('/movies')
-    }
-
     //implementando funcao de login
     async function login(event){
         //privando refresh da pagina
@@ -57,7 +53,7 @@ export default function Login(){
                     <br/><br/>
                     <Link onClick={redirectRegister} className='register-link'>Sign Up</Link>
                     <br/><br/>
-                    <Button className='button-login' type='submit' variant="outlined" color="primary" onClick={redirectIndex}>
+                    <Button className='button-login' type='submit' variant="outlined" color="primary">
                         Login
                     </Button>
                 </form>

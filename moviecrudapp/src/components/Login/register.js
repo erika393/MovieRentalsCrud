@@ -18,18 +18,14 @@ export default function Register(){
         history.push('/')
     }
 
-    //implementando funcao de login
-    async function login(event){
+    //implementando funcao de register
+    async function register(event){
         //privando refresh da pagina
         event.preventDefault()
 
         if(password != confirmPassword){
             return alert('Password and Confirm Password is different!');
         }
-
-        console.log(email)
-        console.log(password)
-        console.log(confirmPassword)
 
         //montando request
         const data = {
@@ -46,7 +42,7 @@ export default function Register(){
 
             //ao se registrar eh redirecionado para a pagina de login
             alert(`User ${email} successfully registered!`)
-            history.push('/register')
+            history.push('/login')
         }catch(error){
             alert('Register Failed! ' + error)
         }
@@ -56,7 +52,7 @@ export default function Register(){
         <div className='login-container'>
             <section className='form'>
                 <img src={logoLogin} alt="Login" id="imgLogin"/>
-                <form  onSubmit={login}>
+                <form  onSubmit={register}>
                     <h1>MOVIE RENTALS</h1>
                     <input type='email' placeholder='Email' value={email} onChange={e => setEmail(e.target.value)}/>
                     <input type="password" placeholder='Password' value={password} onChange={e => setPassword(e.target.value)}/>
@@ -69,7 +65,7 @@ export default function Register(){
                     <br/><br/>
                         <Link onClick={redirectLogin} className='register-link'>Return to Login</Link>
                     <br/><br/>
-                    <Button className='button-login' type='submit' variant="outlined" color="primary" onClick={redirectLogin}>
+                    <Button className='button-login' type='submit' variant="outlined" color="primary">
                         Register
                     </Button>
                 </form>
