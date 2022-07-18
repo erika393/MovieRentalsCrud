@@ -17,8 +17,6 @@ Before starting, make sure you have met the prerequisites.
 
 1. `$ cd moviecrudapp`
 2. `$ npm install or $ yarn install`
-3. `$ npm start or $ yarn start` 
-
 
 ## 💻 Use
 To use it, follow these steps:
@@ -39,6 +37,7 @@ To use it, follow these steps:
 
 ### MovieCrudAPI
 1. Open in your Visual Studio 2019 and launch
+2. Change your MySQL database `moviecrudapi/appsettings.json`
 
 
 ## ✅ Functionalities
