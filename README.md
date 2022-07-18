@@ -36,8 +36,9 @@ To use it, follow these steps:
 2. `$ npm start or $ yarn start`
 
 ### MovieCrudAPI
-1. Open in your Visual Studio 2019 and launch
+1. Open in your Visual Studio 2019
 2. Change your MySQL database data `moviecrudapi/appsettings.json`
+3. Execute
 
 
 ## ✅ Functionalities
