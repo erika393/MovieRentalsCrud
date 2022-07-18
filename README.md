@@ -37,7 +37,7 @@ To use it, follow these steps:
 
 ### MovieCrudAPI
 1. Open in your Visual Studio 2019 and launch
-2. Change your MySQL database `moviecrudapi/appsettings.json`
+2. Change your MySQL database data `moviecrudapi/appsettings.json`
 
 
 ## ✅ Functionalities
