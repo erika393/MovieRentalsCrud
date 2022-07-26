@@ -9,6 +9,7 @@ The project is still in development and the next updates will focus on the follo
 Before starting, make sure you have met the prerequisites.
 * You installed visual studio 2019
 * You installed MySQL
+* You installed .NET
 
 
 ## ⚙️ Installation
